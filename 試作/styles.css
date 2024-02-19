@@ -1,0 +1,97 @@
+header, body {
+  height: 100vh;
+  color: #4a4a4a;
+}
+
+/* 中央に配置するためのコンテナのスタイル */
+.container {
+  width: 80%; /* コンテナの幅を画面の80%に設定 */
+  margin: 200px auto; /* 自動的にマージンを設定して中央に配置 */
+  text-align: center; /* テキストを中央揃えに設定 */
+}
+
+.container h1 {
+  font-weight: normal;
+}
+
+/* フレックスボックスを使用したグリッドのスタイル */
+.grid {
+  display: flex; /* フレックスボックスを適用 */
+  flex-wrap: wrap; /* 要素がコンテナの幅を超えたら折り返すように設定 */
+  gap: 0; /* 要素間の隙間をなくす */
+  font-size: 24px;
+}
+
+#selectContainer {
+  display: flex;
+  width: 100%; /* コンテナの幅を100%に設定 */
+  border: none;
+}
+
+/* 通常セルのスタイル、ここではfloatの使用をやめflexを活用 */
+.cell {
+  background-color: white; /* 背景色を白に設定 */
+  display: flex; /* フレックスボックスを適用 */
+  width: 100%; /* セルの幅をコンテナの幅に合わせる */
+  flex-wrap: wrap; /* 要素がコンテナの幅を超えたら折り返すように設定 */
+  gap: 0; /* 要素間の隙間をなくす */
+  border: none;
+}
+
+/* セレクト要素のスタイル調整 */
+select {
+  width: 100%; /* select要素の幅をセルの幅に合わせる */
+  box-sizing: border-box; /* パディングとボーダーを要素の幅に含める */
+  border: 1px solid #4a4a4a; /* 境界線を黒で1px設定 */
+  padding: 8px; /* 内側の余白を8pxに設定 */
+  font-size: 18px;
+}
+
+/* ヘッダーとセルの基本スタイル */
+.account-item {
+  flex: 1; /* フレックスアイテムが利用可能なスペースを均等に埋める */
+  border: 1px solid #4a4a4a; /* 境界線を黒で1px設定 */
+  padding: 8px; /* 内側の余白を8pxに設定 */
+  box-sizing: border-box; /* パディングとボーダーを要素の幅に含める */
+  text-align: center; /* 両端揃え */
+  text-justify: inter-ideograph; /* 両端揃えの種類 */
+  letter-spacing: 10px;
+}
+
+/* ヘッダーセルのスタイル */
+.account-item {
+  background-color: #d2f3e1ba; /* 背景色をライトグリーンに設定 */
+  font-weight: bold; /* フォントの太さを太字に設定 */
+}
+
+/* チェックボックスを垂直方向に中央に配置するためのスタイル */
+input[type="checkbox"] {
+  margin-top: 10px; /* 上部の余白を10pxに設定して中央に配置 */
+}
+
+/* 全ボタンの基本スタイル */
+button {
+  padding: 10px 20px; /* ボタンの内側の余白を設定 */
+  height: 50px;
+  width: 200px;
+  font-size: 24px; /* フォントサイズを16pxに設定 */
+  cursor: pointer; /* カーソルをポインターに設定 */
+  border: none; /* 境界線をなしに設定 */
+  color: white; /* テキストの色を白に設定 */
+  margin: 50px 5px; /* 左右の余白を5pxに設定 */
+  border-radius: 10px;
+  opacity: 0.7;
+  letter-spacing: 5px;
+  box-shadow: 0 7px #744c01;
+  background-color: #ffa500; /* 背景色をオレンジに設定 */
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
